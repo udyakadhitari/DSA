@@ -4,17 +4,17 @@ public:
 
         vector<int>ans(nums.size());
 
-        int pos = 0;
-        int neg = 1;
+        int k= 0;
+        int j = 1;
 
         for(int i =0; i<nums.size(); i++){
             if(nums[i]>0){ 
-                ans[pos] = nums[i];
-                pos += 2;
+                ans[k] = nums[i];
+                k += 2;
             }
             else{
-                ans[neg] = nums[i];
-                neg += 2;
+                ans[j] = nums[i];
+                j += 2;
             }
         
         }
