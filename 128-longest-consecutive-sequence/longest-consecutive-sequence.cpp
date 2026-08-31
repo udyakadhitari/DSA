@@ -7,11 +7,9 @@ public:
         }
 
         int longest = 1;
-        unordered_set<int> st;
+        unordered_set<int> st(nums.begin(),nums.end());
 
-        for(int i=0; i<nums.size(); i++){
-            st.insert(nums[i]);
-        }
+        
 
         for(auto it: st){
             if(st.find(it-1) == st.end()){
